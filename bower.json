@@ -1,0 +1,23 @@
+{
+  "name": "backbone.test",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "cyper <345343747@qq.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "requirejs": "~2.1.22",
+    "jquery": "~2.1.4"
+  }
+}

@@ -16,3 +16,8 @@ jquery.js:8630 XHR finished loading: GET "http://localhost:3000/blogs".
 jquery.js:8630 XHR finished loading: GET "http://localhost:3000/blogs/1".
 ```
 
+### Mongoose getting started
+
+see http://mongoosejs.com/docs/index.html
+node hello-mongoose
+

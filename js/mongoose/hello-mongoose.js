@@ -1,23 +1,27 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+var Schema = mongoose.Schema;
+//mongoose.connect('mongodb://localhost/test');
+mongoose.connect('localhost', 'test');
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.on('open', function (callback) {
     console.log('yay!');
 
     // schema
-    var KittySchema = mongoose.Schema({
+    var kittySchema = new Schema({
         name: String
     });
-    KittySchema.methods.speak = function () {
-        var greeting = this.name ? 'My name is' + this.name : "I don't have a name";
+    kittySchema.methods.speak = function () {
+        var greeting = this.name ? 'My name is ' + this.name : "I don't have a name";
         console.log(greeting);
     };
 
     // model
-    var Kitten = mongoose.model('Kitten', KittySchema);
+    // 记住第一个参数+s就是表/collection的名字。
+    var Kitten = mongoose.model('Kitten', kittySchema);
 
-    // property
+    // instance/property
     var xx = new Kitten({name: 'xxx'});
     console.log(xx.name);
 

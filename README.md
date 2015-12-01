@@ -1,5 +1,4 @@
-###About
-Backbone测试。
+###Backbone test
 
 bower + requirejs + Backbonejs.
 
@@ -19,5 +18,9 @@ jquery.js:8630 XHR finished loading: GET "http://localhost:3000/blogs/1".
 ### Mongoose getting started
 
 see http://mongoosejs.com/docs/index.html
-node hello-mongoose
+node js/mongoose/hello-mongoose
+
+### Mongoose guide
+see http://mongoosejs.com/docs/guide.html
+node js/mongoose/hello-mongoose-guide
 

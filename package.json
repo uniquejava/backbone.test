@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^4.2.8"
+    "lodash": "^3.10.1",
+    "mongoose": "^4.2.8",
+    "node-sms-luosimao": "git+https://github.com/i5ting/node-sms-luosimao.git"
   }
 }
